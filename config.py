@@ -5,21 +5,21 @@ from logging.handlers import RotatingFileHandler
 
 
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "7400218321:AAG5fCrK9-Q1rjqg89qKFk1kYxya5T0pRWE")
-API_ID = int(os.environ.get("API_ID", "20154522"))
-API_HASH = os.environ.get("API_HASH", "ec1b720c2e0035a310d47ebd5655b676")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "7643288241:AAHzZxpgedQ19a1fTe4HD86hYnyC_C4G6Kk")
+API_ID = int(os.environ.get("API_ID", "26595398"))
+API_HASH = os.environ.get("API_HASH", "6a1e68b9570aebd6e0d04fe43db73921")
 
 
-OWNER_ID = int(os.environ.get("OWNER_ID", "7003079691"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "26595398"))
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://royalsrikanth140:n0O97ntpssfJWUjX@cluster0.788gy1y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DB_NAME", "royalsrikanth140")
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002349059747"))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002075397287"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002075397287"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001819957235"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002637313947"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002637313947"))
 FORCE_SUB_CHANNEL3 = int(os.environ.get("FORCE_SUB_CHANNEL3", "-1001937695139"))
-FORCE_SUB_CHANNEL4 = int(os.environ.get("FORCE_SUB_CHANNEL4", "-1001999073784"))
+FORCE_SUB_CHANNEL4 = int(os.environ.get("FORCE_SUB_CHANNEL4", "-1001937695139"))
 
 
 FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "600")) # auto delete in seconds
@@ -32,7 +32,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 try:
     ADMINS=[7003079691]
-    for x in (os.environ.get("ADMINS", "7003079691").split()):
+    for x in (os.environ.get("ADMINS", "26595398").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -70,7 +70,7 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {mention}\n\n<b>You Need 
 
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(7003079691)
+ADMINS.append(26595398)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
